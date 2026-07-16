@@ -1,0 +1,11 @@
+# PART 1 - INITIALIZE VARIABLES
+total = 0
+number = 1
+
+# PART 2 - CALCULATE SUM
+while number <= 10:
+    total += number
+    number += 1
+
+# PART 3 - DISPLAY RESULT
+print("The sum of the first 10 natural numbers is:", total)
