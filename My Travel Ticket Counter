@@ -1,0 +1,30 @@
+# PART 1 - USER INPUT
+name = input("Enter your name: ")
+destination = input("Enter your destination: ")
+tickets = int(input("Enter number of tickets: "))
+ticket_price = float(input("Enter ticket price: ₹"))
+
+# PART 2 - CALCULATE TOTAL
+total_amount = tickets * ticket_price
+
+# PART 3 - CHECK DISCOUNT
+if total_amount >= 2000:
+    discount = total_amount * 0.10
+else:
+    discount = 0
+
+final_amount = total_amount - discount
+
+# PART 4 - DISPLAY TICKET DETAILS
+print("\n========== TRAVEL TICKET ==========")
+print("Passenger :", name)
+print("Destination :", destination)
+print("Tickets :", tickets)
+print("Ticket Price : ₹", ticket_price)
+print("Total Amount : ₹", total_amount)
+print("Discount : ₹", discount)
+print("Final Amount : ₹", final_amount)
+
+# PART 5 - THANK YOU MESSAGE
+print("\nHave a safe journey!")
+print("Thank you for booking with My Travel Ticket Counter.") 
