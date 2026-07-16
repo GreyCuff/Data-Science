@@ -1,0 +1,30 @@
+# PART 1 - USER INPUT
+city = input("Enter your city: ")
+temperature = float(input("Enter the temperature (°C): "))
+condition = input("Enter the weather condition (Sunny/Rainy/Cloudy): ")
+
+# PART 2 - WEATHER MESSAGE
+if temperature >= 35:
+    message = "It's a very hot day!"
+elif temperature >= 25:
+    message = "The weather is pleasant."
+elif temperature >= 15:
+    message = "It's a cool day."
+else:
+    message = "It's quite cold today."
+
+# PART 3 - RAIN CHECK
+if condition.lower() == "rainy":
+    print("Don't forget to carry an umbrella!")
+else:
+    print("No umbrella needed today.")
+
+# PART 4 - DISPLAY WEATHER REPORT
+print("\n====== WEATHER REPORT ======")
+print("City:", city)
+print("Temperature:", temperature, "°C")
+print("Condition:", condition)
+print("Weather Update:", message)
+
+# PART 5 - THANK YOU MESSAGE
+print("\nHave a wonderful day!")
