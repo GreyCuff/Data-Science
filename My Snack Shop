@@ -1,0 +1,23 @@
+# PART 1 - USER INPUT
+snack = input("Enter the snack name: ")
+price = float(input("Enter the price: "))
+quantity = int(input("Enter the quantity: "))
+
+# PART 2 - CALCULATE TOTAL
+total = price * quantity
+
+# PART 3 - DISPLAY DETAILS
+print("\n----- Snack Bill -----")
+print("Snack:", snack)
+print("Price: ₹", price)
+print("Quantity:", quantity)
+print("Total Bill: ₹", total)
+
+# PART 4 - CHECK STOCK
+if quantity > 0:
+    print("Status: Snack is available.")
+else:
+    print("Status: Snack is out of stock.")
+
+# PART 5 - THANK YOU MESSAGE
+print("Thank you for visiting My Snack Shop!")
