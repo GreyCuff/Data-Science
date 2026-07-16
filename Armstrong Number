@@ -1,0 +1,17 @@
+# PART 1 - USER INPUT
+num = int(input("Enter a number: "))
+
+# PART 2 - CHECK ARMSTRONG NUMBER
+temp = num
+total = 0
+
+while temp > 0:
+    digit = temp % 10
+    total = total + digit ** 3
+    temp = temp // 10
+
+# PART 3 - DISPLAY RESULT
+if total == num:
+    print(num, "is an Armstrong Number")
+else:
+    print(num, "is not an Armstrong Number")
