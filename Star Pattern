@@ -1,0 +1,11 @@
+# PART 1 - USER INPUT
+rows = int(input("Enter the number of rows: "))
+
+# PART 2 - PRINT STAR PATTERN
+for i in range(1, rows + 1):
+    for j in range(i):
+        print("*", end=" ")
+    print()
+
+# PART 3 - END MESSAGE
+print("\nStar Pattern Completed!")
