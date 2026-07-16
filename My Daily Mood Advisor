@@ -1,0 +1,27 @@
+# PART 1 - USER INPUT
+name = input("Enter your name: ")
+mood = input("How are you feeling today? (Happy/Sad/Angry/Tired): ")
+
+# PART 2 - MOOD ADVICE
+if mood.lower() == "happy":
+    advice = "Keep smiling and spread positivity!"
+elif mood.lower() == "sad":
+    advice = "Talk to someone you trust and stay positive."
+elif mood.lower() == "angry":
+    advice = "Take a deep breath and stay calm."
+elif mood.lower() == "tired":
+    advice = "Get some rest and drink plenty of water."
+else:
+    advice = "Have a wonderful day and take care!"
+
+# PART 3 - DISPLAY RESULT
+print("\n====== DAILY MOOD REPORT ======")
+print("Name :", name)
+print("Mood :", mood)
+print("Advice :", advice)
+
+# PART 4 - ENCOURAGEMENT
+print("\nRemember: Every day is a new beginning!")
+
+# PART 5 - THANK YOU MESSAGE
+print("Thank you for using My Daily Mood Advisor!")
