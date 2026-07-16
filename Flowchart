@@ -1,0 +1,10 @@
+print("Welcome to Flowcharts!")
+print("A flowchart is a diagram that shows the steps of a program.")
+print("It helps us understand the logic before writing code.")
+
+print("\nCommon Flowchart Symbols:")
+print("Start / End")
+print("Input / Output")
+print("Process")
+print("Decision")
+print("Flow Line")
