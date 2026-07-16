@@ -1,0 +1,28 @@
+# PART 1 - IMPORT MODULE & SCREEN SETUP
+import turtle
+
+screen = turtle.Screen()
+screen.title("Colour Loop Artwork")
+screen.bgcolor("black")
+
+# PART 2 - CREATE TURTLE
+pen = turtle.Turtle()
+pen.speed(0)
+pen.width(2)
+
+# PART 3 - DRAW COLOURFUL LOOP
+colors = ["red", "yellow", "green", "cyan", "blue", "magenta", "white"]
+
+for i in range(100):
+    pen.color(colors[i % len(colors)])
+    pen.forward(i * 3)
+    pen.right(91)
+
+# PART 4 - WRITE A MESSAGE
+pen.penup()
+pen.goto(-70, -20)
+pen.color("white")
+pen.write("Colour Loop Artwork", font=("Arial", 14, "bold"))
+
+# PART 5 - KEEP WINDOW OPEN
+turtle.done()
