@@ -1,0 +1,12 @@
+# Printing a greeting message
+print("Hello, world!")
+
+# Printing my name
+print("My name is Sangeet.")
+
+# Printing a fun fact about myself
+# print("I love playing football.")
+print("I love playing football.")
+
+# Performing and printing a simple calculation
+print("The result of 4 + 12 is:", 4 + 12)
