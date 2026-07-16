@@ -1,0 +1,37 @@
+# PART 1 - IMPORT MODULE & SCREEN SETUP
+import turtle
+
+screen = turtle.Screen()
+screen.title("Neon Mandala")
+screen.bgcolor("black")
+
+# PART 2 - CREATE TURTLE
+pen = turtle.Turtle()
+pen.speed(0)
+pen.width(2)
+pen.hideturtle()
+
+# PART 3 - DRAW COLORFUL MANDALA
+colors = ["red", "orange", "yellow", "green",
+          "cyan", "blue", "purple", "pink"]
+
+for i in range(72):
+    pen.color(colors[i % len(colors)])
+
+    for j in range(6):
+        pen.forward(80)
+        pen.right(60)
+
+    pen.right(5)
+
+# PART 4 - DRAW CENTER CIRCLE
+pen.penup()
+pen.goto(0, -25)
+pen.pendown()
+pen.color("white")
+pen.begin_fill()
+pen.circle(25)
+pen.end_fill()
+
+# PART 5 - FINISH
+turtle.done()
