@@ -1,0 +1,17 @@
+#  INTRODUCE YOURSELF
+
+# PART 1 - CREATE A FUNCTION
+def introduce(name, age, hobby):
+    print("\nHello!")
+    print("My name is", name)
+    print("I am", age, "years old.")
+    print("My hobby is", hobby)
+    print("Nice to meet you!")
+
+# PART 2 - USER INPUT
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+hobby = input("Enter your hobby: ")
+
+# PART 3 - CALL THE FUNCTION
+introduce(name, age, hobby)
