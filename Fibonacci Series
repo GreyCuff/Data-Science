@@ -1,0 +1,14 @@
+# PART 1 - USER INPUT
+terms = int(input("Enter the number of terms: "))
+
+# PART 2 - DISPLAY FIBONACCI SERIES
+first = 0
+second = 1
+
+print("\nFibonacci Series:")
+
+for i in range(terms):
+    print(first, end=" ")
+    next_num = first + second
+    first = second
+    second = next_num
